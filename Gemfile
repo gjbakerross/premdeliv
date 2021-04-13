@@ -26,6 +26,8 @@ gem 'openssl'
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'passenger'
+gem 'bootstrap-datepicker-rails'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

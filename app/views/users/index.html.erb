@@ -1,0 +1,22 @@
+<div class="container">
+
+<h1 class="display-4 mb-4 mx-auto text-center">Change Premier Delivery Status</h1>
+
+
+<p id="notice" class="alert alert-primary" role="alert"><%= notice %></p>
+
+ <%= link_to 'Change Premier Delivery Status', new_user_path, class:"btn btn-primary mb-4" %>
+
+ <table class="table table-striped">
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td scope="row"><%=user.email%></th>
+        <td> <%=user.country%></td>
+        <td> <%=user.date%></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
