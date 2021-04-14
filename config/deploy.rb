@@ -7,7 +7,7 @@ set :repository_cache, "git_cache"
 set :deploy_via, :remote_cache
 set :ssh_options, {:forward_agent => true, keys: "/home/gjeffery/.ssh/PremierDeliveryUnsubscribe_key.pem"}
 set :deploy_to, "/home/premierdelivery/#{fetch :application}"
-set :rbenv_path, '/home/premierdeliver/.rbenv'
+set :rbenv_path, '/home/premierdelivery/.rbenv'
 set :linked_files, %w{config/master.key}
 set :nvm_type, :user # or :system, depends on your nvm setup
 set :nvm_node, 'v15.6.0'
