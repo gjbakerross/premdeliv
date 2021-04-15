@@ -59,9 +59,9 @@ class UsersController < ApplicationController
 
   def export_users
     # redirect_to :index
-    @users = User.all
+    @users = User.where(created_at:(Export.last.created_at)...Time.now)
     send_data @users.to_user_csv, filename: "email-#{Date.today}.csv"
-    
+    Export.create
   end
 
   private
