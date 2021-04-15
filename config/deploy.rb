@@ -13,6 +13,9 @@ set :nvm_type, :user # or :system, depends on your nvm setup
 set :nvm_node, 'v15.6.0'
 set :nvm_map_bins, %w{node npm yarn webpack rake}
 set :nvm_custom_path, '/home/premierdelivery/.nvm/'
+
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
+
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
